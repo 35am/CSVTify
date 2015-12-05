@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>CSVTify</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <style type="text/css">
+            a, a:visited{ color: #000000; text-decoration:none;}
+            a:hover{ text-decoration:none; font-weight:bold;}
+            p.val { text-align: center; margin : 0; margin-top : 4.2%; }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <h2>CSVTify : Export your Spotify Playlists to CSV</h2>
+            <p>1. Select your songs URL with CTRL+A on Spotify Desktop and paste them here</p>
+            <p>2. Clic <i>Give me CSV !</i></p>
+
+            <form method="post" action="./export.php">
+                <p>
+                    <textarea name="songs" id="songs" style="width: 800px;" rows="10" cols="250">https://open.spotify.com/track/3iP2zPzKv47zEB6FsQ5gKW</textarea>
+                </p>
+                <p><input type="submit" value="Give me CSV !" style="width: 100px;" /></p>
+            </form>
+            <p style="margin-top: 50px; text-align: center;"><a href="https://github.com/35am/CSVTify">CSVTify on GitHub</a></p>
+            <p class="val"><a href="http://validator.w3.org/check?uri=referer">
+                    <img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" />
+                </a>
+            </p>
+        </div>
+    </body>
+</html>
